@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Task</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1 class="header-title">My test task</h1>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section">
+        <div class="section-header">
+          <h2>EventEmitter</h2>
+        </div>
+        <p class="section-description">Manage custom events with subscribe/unsubscribe functionality</p>
+
+        <div class="controls">
+          <button class="btn btn-primary" id="testEventEmitter">
+            Test EventEmitter
+          </button>
+          <button class="btn btn-secondary" id="testEventEmitterChain">
+            Test Chaining
+          </button>
+        </div>
+
+        <div class="output">
+          <div class="output-header">
+            <h3>Output</h3>
+          </div>
+          <div class="output-content" id="eventEmitterContent">
+            <div class="placeholder">Output will appear here...</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Promise(all)</h2>
+        </div>
+        <p class="section-description">Custom implementation of Promise.all method</p>
+
+        <div class="controls">
+          <button class="btn btn-success" id="testPromiseAllSuccess">
+            Success Case
+          </button>
+          <button class="btn btn-danger" id="testPromiseAllReject">
+            Reject Case
+          </button>
+        </div>
+
+        <div class="output">
+          <div class="output-header">
+            <h3>Results</h3>
+          </div>
+          <div class="output-content" id="promiseAllContent">
+            <div class="placeholder">Promise results will appear here...</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Debounced Input</h2>
+        </div>
+        <p class="section-description">Real-time input with debounce functionality</p>
+
+        <div class="input-container">
+          <div class="input-wrapper">
+            <input type="text" id="debouncedInput" placeholder="Start typing to see debounce in action..."
+              class="input-field">
+          </div>
+
+          <div class="input-stats">
+            <div class="stat-item">
+              <span class="stat-label">Current value:</span>
+              <span class="stat-value" id="currentValue">—</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Debounced value:</span>
+              <span class="stat-value" id="debouncedValue">—</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="output">
+          <div class="output-header">
+            <h3>Activity Log</h3>
+          </div>
+          <div class="output-content" id="debounceContent">
+            <div class="placeholder">Type something to see activity log...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/eventEmitter.js"></script>
+  <script src="js/promiseAll.js"></script>
+  <script src="js/debounce.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
