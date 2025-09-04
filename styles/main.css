@@ -129,14 +129,6 @@ body {
   padding: 30px;
 }
 
-.footer {
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 40px;
-  color: var(--primary-orange-light);
-  font-size: 0.9rem;
-}
-
 @media (max-width: 768px) {
   .container {
     padding: 15px;
